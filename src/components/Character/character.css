@@ -1,0 +1,45 @@
+.character {
+	height: 350px;
+	text-align: center;
+	transition: all 0.3s;
+	width: 250px;
+	padding: 1rem;
+	background-color: var(--color-dark);
+	cursor: pointer;
+}
+
+.character__image {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	transition: all 0.3s;
+}
+
+.character:hover {
+	border-radius: 0.3rem;
+	padding: 0;
+	background-color: var(--color-gray);
+}
+.character:hover .character__image {
+	transform: translateY(0%);
+	width: 250px;
+	height: 250px;
+	border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.character__name {
+	padding-top: 2rem;
+	text-transform: uppercase;
+	color: var(--color-light);
+}
+
+.character:hover.character--Alive {
+	box-shadow: 0 0 10px var(--color-success), inset 0 0 50px var(--color-success);
+}
+.character:hover.character--Dead {
+	box-shadow: 0 0 10px var(--color-danger), inset 0 0 50px var(--color-danger);
+}
+.character:hover.character--unknown {
+	box-shadow: 0 0 10px var(--color-light), inset 0 0 50px var(--color-light);
+}

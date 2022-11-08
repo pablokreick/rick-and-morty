@@ -1,0 +1,34 @@
+:root {
+	--color-primary: #f08d49;
+	--color-gray: #3c3e44;
+	--color-dark: #202329;
+	--color-light: #ffffff;
+	--color-success: #85e541;
+	--color-danger: #d63d2e;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+
+.title {
+	font-weight: 900;
+	font-size: calc(2rem + 3vw);
+	text-align: center;
+}
+
+.padding--normal {
+	padding: 1rem;
+}
+
+.padding--big {
+	padding: 3rem;
+}
+
+.padding--huge {
+	padding: 5rem;
+}

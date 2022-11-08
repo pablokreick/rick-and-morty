@@ -1,0 +1,14 @@
+.loading {
+	position: relative;
+	z-index: 50;
+	background-color: var(--color-dark);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 -85px 100px 100px var(--color-dark);
+}
+
+.loading__image {
+	display: block;
+}
