@@ -7,12 +7,13 @@ export const useInfo = (url) => {
 
 	useEffect(() => {
 		setIsLoading(true);
-		getInfo(url).then((response) => {
-			setTimeout(() => {
-				setPage(response);
-				setIsLoading(false);
-			}, 2000);
-		});
+		getInfo(url)
+			.then((response) => setPage(response))
+			.finally(() => {
+				setTimeout(() => {
+					setIsLoading(false);
+				}, 2000);
+			});
 	}, [url]);
 
 	return { page, isLoading };
