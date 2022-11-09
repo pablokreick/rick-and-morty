@@ -11,6 +11,14 @@ const Home = () => {
 	const [url, setUrl] = useState(BASE_URL);
 	const { page, isLoading } = useInfo(url);
 
+	const handleChange = (e) => {
+		setTimeout(() => {
+			let newUrl = BASE_URL;
+			newUrl += e.target.value !== "" ? `/?name=${e.target.value}` : "";
+			setUrl(newUrl);
+		}, 1500);
+	};
+
 	const handleClick = (newUrl) => {
 		if (newUrl !== null) {
 			setUrl(newUrl);
@@ -19,7 +27,7 @@ const Home = () => {
 
 	return (
 		<div className="bg--dark">
-			<Header />
+			<Header handleChange={handleChange} />
 			{isLoading ? (
 				<Loading />
 			) : (
