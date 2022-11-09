@@ -11,16 +11,22 @@
 	color: var(--color-light);
 	border-radius: 0.3rem;
 	position: fixed;
-	/* width: 50%; */
-	/* max-width: 500px; */
 	top: 50%;
 	left: 50%;
 	background-color: var(--color-darkTransparent);
 	backdrop-filter: blur(10px);
+	border: 1px solid var(--color-light);
 	transform: translate(-50%, -50%);
 	z-index: 100;
-	padding: 4rem 8rem;
+	padding: 1rem 2rem;
 	box-shadow: 2px 2px 10px var(--color-darkTransparent);
+}
+
+@media screen and (min-width: 768px) {
+	.modal {
+		border: none;
+		padding: 4rem 8rem;
+	}
 }
 
 .modal__image {

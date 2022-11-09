@@ -9,7 +9,7 @@
 	padding-bottom: 2rem;
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fill, 300px);
+	grid-template-columns: repeat(auto-fill, 250px);
 	justify-content: center;
 	box-shadow: 0 -150px 100px 100px var(--color-dark);
 }

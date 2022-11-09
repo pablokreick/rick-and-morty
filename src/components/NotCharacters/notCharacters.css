@@ -1,0 +1,28 @@
+.notCharacters {
+	position: relative;
+	z-index: 50;
+	background-color: var(--color-dark);
+	min-height: 100vh;
+	box-shadow: 0 -85px 100px 100px var(--color-dark);
+	text-align: center;
+}
+
+.notCharacters__text {
+	font-size: 2rem;
+	color: var(--color-light);
+	font-weight: 900;
+	text-transform: uppercase;
+	padding: 1rem;
+}
+
+.notCharacters__image {
+	width: 100%;
+	max-width: 500px;
+}
+
+@media screen and (min-width: 768px) {
+	.notCharacters__text {
+		font-size: 3rem;
+		padding: 4rem;
+	}
+}
